@@ -1,0 +1,806 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    height: 100%; /* Faz a altura ocupar 100% */
+}
+
+body {
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    background-image: url('https://1.bp.blogspot.com/-GjKJGwrzoJc/YPgn-T_sUsI/AAAAAAAAasg/dlyt5q9lnyET10yhD9jcEdzZiuWGjZAjQCLcBGAsYHQ/s1170/netflix-servico-distribuicao-jogos-mobile.jpg');
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+}
+
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Container de Login */
+.login-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Caixa de Login */
+.login-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    width: 350px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.login-box h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Opções de Login */
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.options a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+/* Login Social */
+.social-login {
+    margin: 20px 0;
+}
+
+.social-login .facebook-connect {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #3b5998;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Inscrição */
+.signup p {
+    color: #b3b3b3;
+}
+
+.signup a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+/* Mensagem de Erro */
+.hidden {
+    display: none;
+}
+
+.message-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    width: 350px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+    margin: 0 auto; /* Centraliza a caixa */
+    position: relative; /* Para posicionar o botão de voltar */
+}
+
+.message-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.message-box p {
+    margin-bottom: 20px;
+}
+
+.message-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Botão Voltar */
+.back-button {
+    position: absolute; /* Posiciona o link */
+    top: 10px; /* Distância do topo */
+    left: 10px; /* Distância da esquerda */
+    background: none; /* Remove o fundo */
+    color: white; /* Texto em branco */
+    border: none; /* Remove bordas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.back-button:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #141414; /* Fundo escuro */
+    color: white;
+}
+
+.plan-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os planos */
+}
+
+.plan {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, border 0.3s;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+    border-color: red; /* Destaque ao passar o mouse */
+}
+
+.plan h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.select-plan {
+    background-color: red; /* Fundo vermelho */
+    color: white; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.select-plan:hover {
+    background-color: darkred; /* Escurece ao passar o mouse */
+}
+
+.hidden {
+    display: none;
+}
+
+#selectedPlan {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pay-button {
+    width: 100%;
+    padding: 12px;
+    background-color: red; /* Fundo vermelho */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    color: white; /* Texto em branco */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+.pay-button:hover {
+    background-color: darkred; /* Escurece o fundo ao passar o mouse */
+}
+
+.back-button {
+    margin-top: 10px;
+    background-color: transparent; /* Fundo transparente */
+    color: white; /* Texto em branco */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.back-button:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+#selectedPlan {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.payment-container {
+    background-color: red; /* Fundo vermelho */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: flex; /* Usar flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin: 20px 0; /* Margem acima e abaixo */
+}
+
+.pay-button {
+    padding: 12px 20px; /* Espaçamento interno */
+    background-color: red; /* Fundo vermelho */
+    color: white; /* Texto em branco */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+.pay-button:hover {
+    background-color: darkred; /* Escurece o fundo ao passar o mouse */
+}
+
+.back-button {
+    margin-top: 10px;
+    background-color: transparent; /* Fundo transparente */
+    color: white; /* Texto em branco */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.back-button:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #141414; /* Fundo escuro */
+    color: white;
+}
+
+.plan-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os planos */
+}
+
+.plan {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, border 0.3s;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+    border-color: red; /* Destaque ao passar o mouse */
+}
+
+.plan h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.select-plan {
+    background-color: red; /* Fundo vermelho */
+    color: white; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.select-plan:hover {
+    background-color: darkred; /* Escurece ao passar o mouse */
+}
+
+.hidden {
+    display: none;
+}
+
+#paymentContainer {
+    margin-top: 30px; /* Espaço acima do botão */
+}
+
+.pay-button {
+    padding: 12px 20px; /* Espaçamento interno */
+    background-color: red; /* Fundo vermelho */
+    color: white; /* Texto em branco */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+.pay-button:hover {
+    background-color: darkred; /* Escurece o fundo ao passar o mouse */
+}
+
+.back-button {
+    margin-top: 10px;
+    background-color: transparent; /* Fundo transparente */
+    color: white; /* Texto em branco */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.back-button:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+.plan.selected {
+    border: 2px solid red; /* Borda vermelha para o plano selecionado */
+}
+.plan.selected {
+    border: 2px solid red; /* Borda vermelha para o plano selecionado */
+}
+.continue-button {
+    display: block; /* Para ocupar a linha inteira */
+    margin: 20px auto; /* Centraliza o botão */
+    padding: 12px 20px; /* Estilo do botão */
+    background-color: red; /* Cor de fundo vermelha */
+    color: white; /* Texto branco */
+    border: none; /* Remove bordas */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+.continue-button:hover {
+    background-color: darkred; /* Cor ao passar o mouse */
+}
+.plan {
+    border: 1px solid transparent; /* Borda padrão transparente */
+    transition: border-color 0.3s; /* Transição suave na cor da borda */
+}
+
+.plan.selected {
+    border-color: red; /* Borda vermelha ao selecionar */
+}
+.plan {
+    border: 1px solid transparent; /* Borda padrão transparente */
+    transition: border-color 0.3s; /* Transição suave na cor da borda */
+}
+
+.plan.selected {
+    border-color: red; /* Borda vermelha ao selecionar */
+}
+
+.continue-button {
+    display: block; /* Para ocupar a linha inteira */
+    margin: 20px auto; /* Centraliza o botão */
+    padding: 12px 20px; /* Estilo do botão */
+    background-color: red; /* Cor de fundo vermelha */
+    color: white; /* Texto branco */
+    border: none; /* Remove bordas */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+.continue-button:hover {
+    background-color: darkred; /* Cor ao passar o mouse */
+}
+.continue-button {
+    display: block; /* Para ocupar a linha inteira */
+    margin: 20px auto; /* Centraliza o botão */
+    padding: 12px 20px; /* Estilo do botão */
+    background-color: red; /* Cor de fundo vermelha */
+    color: white; /* Texto branco */
+    border: none; /* Remove bordas */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+.continue-button:hover {
+    background-color: darkred; /* Cor ao passar o mouse */
+}
+/* Estilos da Página de Pagamento */
+.payment-container {
+    background-color: red; /* Fundo vermelho */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: flex; /* Usar flexbox para centralizar */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8); /* Sombra para destacar */
+}
+
+.payment-container h1 {
+    margin-bottom: 20px; /* Margem abaixo do título */
+    color: white; /* Cor do título */
+}
+
+.payment-container input {
+    width: 100%; /* Largura total */
+    padding: 12px; /* Espaçamento interno */
+    margin: 10px 0; /* Margem entre inputs */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: none; /* Remove bordas */
+    background-color: #fff; /* Fundo branco para os inputs */
+    color: #333; /* Texto escuro */
+}
+
+.pay-button {
+    padding: 12px 20px; /* Espaçamento interno */
+    background-color: darkred; /* Fundo vermelho escuro */
+    color: white; /* Texto em branco */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.pay-button:hover {
+    background-color: #c00000; /* Escurece o fundo ao passar o mouse */
+}
+
+.back-button {
+    margin-top: 10px; /* Margem acima do botão de voltar */
+    background-color: transparent; /* Fundo transparente */
+    color: white; /* Texto em branco */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.back-button:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+body {
+    background-color: #141414;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-box {
+    background-color: rgba(0, 0, 0, 0.8); /* Aumenta a opacidade do fundo */
+    padding: 40px;
+    border-radius: 8px;
+    width: 400px; /* Aumenta a largura do quadro */
+    text-align: center;
+}
+
+.signup-box h1 {
+    margin-bottom: 20px;
+}
+
+.signup-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.signup-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e50914;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilo para os inputs da página de cadastro */
+.signup-box input {
+    width: 100%;
+    padding: 12px; /* Igual ao da login-box */
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #333; /* Mesma cor do fundo da login-box */
+    color: white; /* Cor do texto */
+}
+
+/* Estilo do botão da página de cadastro */
+.signup-box button {
+    width: 100%;
+    padding: 12px; /* Igual ao da login-box */
+    background-color: #e50914; /* Cor igual ao botão da login-box */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.signup-box button:hover {
+    background-color: #f40612; /* Cor de fundo ao passar o mouse, igual ao da login-box */
+}
+
+
+.login-redirect a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado por padrão */
+}
+.signup-box button {
+    margin-bottom: 20px; /* Adiciona espaço abaixo do botão */
+}
+
+.login-redirect a:hover {
+    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+}
+/* Estilos da Página de Pagamento */
+.payment-container {
+    background-color: white; /* Fundo branco */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: flex; /* Usar flexbox para centralizar */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+    width: 400px; /* Largura do container */
+    margin: 0 auto; /* Centraliza o container na tela */
+}
+
+.payment-container h1 {
+    margin-bottom: 20px; /* Margem abaixo do título */
+    color: black; /* Cor do título */
+}
+
+.payment-container p {
+    margin-bottom: 20px; /* Margem abaixo da frase */
+    color: #333; /* Cor da frase */
+}
+
+.payment-container input {
+    width: 100%; /* Largura total */
+    padding: 12px; /* Espaçamento interno */
+    margin: 10px 0; /* Margem entre inputs */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 1px solid #ccc; /* Borda clara */
+    background-color: #f9f9f9; /* Fundo claro para os inputs */
+    color: #333; /* Texto escuro */
+}
+
+.pay-button {
+    padding: 12px 20px; /* Espaçamento interno */
+    background-color: red; /* Fundo vermelho */
+    color: white; /* Texto em branco */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+.pay-button:hover {
+    background-color: darkred; /* Escurece o fundo ao passar o mouse */
+}/* Estilos da Página de Pagamento */
+.payment-container {
+    background-color: rgba(0, 0, 0, 0.75); /* Fundo escuro, igual às outras páginas */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: flex; /* Usar flexbox para centralizar */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+    width: 400px; /* Largura do container */
+    margin: 0 auto; /* Centraliza o container na tela */
+}
+
+.payment-container h1 {
+    margin-bottom: 20px; /* Margem abaixo do título */
+    color: white; /* Cor do título */
+}
+
+.payment-container p {
+    margin-bottom: 20px; /* Margem abaixo da frase */
+    color: #ccc; /* Cor clara para a frase */
+}
+
+.payment-container input {
+    width: 100%; /* Largura total */
+    padding: 12px; /* Espaçamento interno */
+    margin: 10px 0; /* Margem entre inputs */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 1px solid #ccc; /* Borda clara */
+    background-color: #333; /* Fundo escuro para os inputs */
+    color: #fff; /* Texto claro */
+}
+
+/* Estilos para os grupos de inputs */
+.form-group {
+    display: flex; /* Usar flexbox para dispor os elementos lado a lado */
+    justify-content: space-between; /* Espaço entre os campos */
+    width: 100%; /* Largura total */
+    margin-bottom: 20px; /* Margem abaixo do grupo de campos */
+}
+
+.form-group input {
+    flex: 1; /* Cada input ocupa o mesmo espaço */
+    margin-right: 10px; /* Margem à direita para separar os inputs */
+}
+
+.form-group input:last-child {
+    margin-right: 0; /* Remove margem do último input */
+}
+
+.pay-button {
+    padding: 12px 20px; /* Espaçamento interno */
+    background-color: red; /* Fundo vermelho */
+    color: white; /* Texto em branco */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+.pay-button:hover {
+    background-color: darkred; /* Escurece o fundo ao passar o mouse */
+}
+.message-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    width: 350px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+    position: absolute; /* Mantém a posição absoluta */
+    top: 50%; /* 50% da altura da tela */
+    left: 50%; /* 50% da largura da tela */
+    transform: translate(-50%, -50%); /* Centraliza a caixa */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #141414; /* Fundo escuro padrão */
+    color: white;
+}
+
+/* Classe para remover a imagem de fundo */
+.no-background {
+    background-image: none; /* Remove a imagem de fundo */
+}
+
+
+/* Estilos da Página de Pagamento */
+.payment-container {
+    background-color: rgba(0, 0, 0, 0.75); /* Fundo cinza (translúcido) */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: flex; /* Usar flexbox para centralizar */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8); /* Sombra para destacar */
+}
+
+/* Estilos Adicionais */
+.payment-title {
+    color: #fff; /* Cor do título */
+    font-size: 24px; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.payment-button {
+    background-color: #ff4081; /* Cor do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.payment-button:hover {
+    background-color: #e91e63; /* Cor do botão ao passar o mouse */
+}
+body {
+    display: flex; /* Usar flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da viewport */
+}
+.logo {
+    position: absolute; /* Permite que a imagem seja posicionada em relação ao contêiner pai */
+    top: 10px; /* Distância do topo */
+    left: 10px; /* Distância da esquerda */
+    width: 200px; /* Largura da imagem (ajuste conforme necessário) */
+    height: auto; /* Mantém a proporção da imagem */
+    z-index: 10; /* Garante que a imagem esteja acima de outros elementos */
+}
+
+

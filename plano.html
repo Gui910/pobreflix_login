@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<body class="no-background">
+    <!-- Conteúdo da página -->
+</body>
+
+<html lang="pt-BR">
+<head>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Netflix_2015_N_logo.svg/330px-Netflix_2015_N_logo.svg.png" type="image/png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha seu Plano - Netflix</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        .plan.selected {
+            border: 2px solid red; /* Borda vermelha ao selecionar um plano */
+        }
+        .hidden {
+            display: none; /* Classe para esconder elementos */
+        }
+        .no-background {
+            background-color: transparent !important; /* Remove o fundo cinza */
+        }
+    </style>
+</head>
+<body class="no-background"> <!-- Adicionei a classe aqui -->
+    <div class="plan-container">
+        <h1>Escolha o Melhor Plano Para Você</h1>
+
+        <div class="plans">
+            <div class="plan" id="basic">
+                <h2>Plano Básico</h2>
+                <p>Assista em 1 dispositivo ao mesmo tempo.</p>
+                <p>HD não disponível.</p>
+                <p>R$ 29,90/mês</p>
+                <button class="select-plan" onclick="selectPlan('basic')">Selecionar</button>
+            </div>
+            <div class="plan" id="standard">
+                <h2>Plano Padrão</h2>
+                <p>Assista em 2 dispositivos ao mesmo tempo.</p>
+                <p>HD disponível.</p>
+                <p>R$ 39,90/mês</p>
+                <button class="select-plan" onclick="selectPlan('standard')">Selecionar</button>
+            </div>
+            <div class="plan" id="premium">
+                <h2>Plano Premium</h2>
+                <p>Assista em 4 dispositivos ao mesmo tempo.</p>
+                <p>Ultra HD disponível.</p>
+                <p>R$ 49,90/mês</p>
+                <button class="select-plan" onclick="selectPlan('premium')">Selecionar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+    <script>
+        function selectPlan(plan) {
+            // Redireciona diretamente para a página de pagamento com o plano selecionado
+            window.location.href = `pagamento.html?plan=${encodeURIComponent(plan)}`;
+        }
+    </script>
+</body>
+<body>
+    <img src="https://logopng.com.br/logos/netflix-94.png" alt="Logo" class="logo">
+   
+</body>
+
+</html>

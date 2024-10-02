@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Netflix_2015_N_logo.svg/330px-Netflix_2015_N_logo.svg.png" type="image/png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Pagamento</title>
+    <style>
+        .no-background {
+            background-color: transparent !important; /* Remove o fundo cinza */
+        }
+        .confirmation-message {
+            display: none; /* Esconde a mensagem de confirmação inicialmente */
+            text-align: center;
+            margin-top: 20px;
+        }
+        .pay-button {
+            margin-top: 15px; /* Adiciona um espaço acima do botão "Continuar" */
+        }
+    </style>
+    <script>
+        function processPayment() {
+            // Esconde o formulário e mostra a mensagem de confirmação
+            document.querySelector('.payment-container').style.display = 'none';
+            document.querySelector('.confirmation-message').style.display = 'block';
+        }
+
+        function continueToSite() {
+            // Redireciona para o site desejado
+            window.location.href = "https://pobreflix.global/";
+        }
+    </script>
+</head>
+<body class="no-background"> <!-- Adicionei a classe aqui -->
+    <div class="payment-container">
+        <h1>Pagamento</h1>
+        <p>Por favor, insira suas informações de pagamento.</p>
+        
+        <div class="form-group">
+            <input type="text" placeholder="Nome" required />
+            <input type="text" placeholder="Sobrenome" required />
+        </div>
+
+        <div class="form-group">
+            <input type="text" placeholder="CPF do Titular" required />
+        </div>
+
+        <div class="form-group">
+            <input type="text" placeholder="Número do Cartão" required />
+        </div>
+
+        <div class="form-group">
+            <input type="text" placeholder="Data de Validade (MM/AA)" required />
+            <input type="text" placeholder="Código de Segurança" required />
+        </div>
+        
+        <button class="pay-button" onclick="processPayment()">Pagar</button>
+    </div>
+
+    <div class="confirmation-message">
+        <h2>Pagamento Concluído</h2>
+        <p>Obrigado pelo seu pagamento!</p>
+        <button class="pay-button" onclick="continueToSite()">Continuar</button> <!-- Adicionei a classe pay-button aqui -->
+    </div>
+</body>
+</html>
